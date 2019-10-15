@@ -68,7 +68,7 @@
       <div class="example-block">
         <h3>6、自定义指令</h3>
         <!-- 在产品需要搜索框自动聚焦时很有用，autofocus在某些内核中不起效果 -->
-        <input type="text" v-focus>
+        <!-- <input type="text" v-focus> -->
         <!-- 颜色指令 -->
         <p v-color:bgColor="bgColor" v-color:fontColor="fontColor">测试指令</p>
         <!-- 当多个地方需要处理输入框为正整数时，全局指令会比在当前组件中监听输入事件更为方便 -->

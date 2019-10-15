@@ -102,7 +102,7 @@ header {
 
 }
 .label-text{
-  width: 100px;
+  width: 60px;
   display: block;
 }
 /* .edit-item {
