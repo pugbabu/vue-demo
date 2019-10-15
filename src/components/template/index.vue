@@ -133,7 +133,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+/* :root { --color: blue; } */
 .active{
   font-size: 20px;
 }
