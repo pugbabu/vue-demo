@@ -1,6 +1,6 @@
 <!--  -->
 <template>
-  <div class="footer-tpl">
+  <div class="footer-tpl" @click="showCloseIcon">
     <ul class="footer-box">
       <li v-for="item in nowContent.icons" :key="item.id">
         <img :src="item.defaultIcon"/>
@@ -50,6 +50,9 @@ export default {
       this.$bus.$on('footerTpl', val => {
         this.nowContent = val
       })
+    },
+    showCloseIcon () {
+      this.$store.commit('setCurrentEditComponent', 'footer-tpl-edit')
     }
   }
 

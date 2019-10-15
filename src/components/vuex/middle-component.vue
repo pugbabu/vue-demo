@@ -1,7 +1,12 @@
 <!-- 中间栏组件 -->
 <template>
   <div class="wrapper" @drop="dropNow($event)" @dragover="allowDrop($event)">
-    <li :is="item.type" v-for="(item, index) in nowItems"  :content="item.content" :name="item.name" :key="index"></li>
+    <component
+      :is="item.type" v-for="(item, index) in nowItems"
+      :content="item.content"
+      :name="item.name"
+      :key="index">
+    </component>
   </div>
 </template>
 
@@ -16,6 +21,16 @@ export default {
   },
   created () {
     this.asyncImport()
+  },
+  computed: {
+    items () {
+      return this.$store.getters.items
+    }
+  },
+  watch: {
+    items (val) {
+      this.nowItems = val
+    }
   },
   methods: {
     dropNow (ev) { // 拖到空白区域的时候，触发此方法
