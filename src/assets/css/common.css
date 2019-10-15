@@ -1,0 +1,11 @@
+.example-block{
+  margin: 10px;
+  line-height: 24px;
+}
+.example-block h3{
+  font-weight: 600;
+  color: #000;
+}
+.example-block p {
+  margin: 10px;
+}
