@@ -14,7 +14,6 @@
 
 <script>
 import CommonMixin from '@/mixins/common-mixin'
-import CodeTest from './code-test'
 export default {
   data () {
     return {
@@ -38,9 +37,6 @@ export default {
         }
       ]
     }
-  },
-  components: {
-    CodeTest
   },
   mixins: [CommonMixin],
   inject: ['isJSON'],

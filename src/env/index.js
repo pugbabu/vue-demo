@@ -4,20 +4,20 @@
  */
 const envList = {
   dev: {
-    baseUrl: '',
-    appId: 'wxb7ee6f2f790f6213' // 解百测试服务号 wxb7ee6f2f790f6213
-  },
-  test: {
-    baseUrl: '',
+    baseUrl: 'http://test.mamago.com',
     appId: 'wxb7ee6f2f790f6213'
   },
-  weitong: {
-    baseUrl: '',
-    appId: 'wx52989159af26d752' // wx52989159af26d752 唯彤
+  test: {
+    baseUrl: 'http://test.mamago.com',
+    appId: 'wxb7ee6f2f790f6213'
+  },
+  pre: {
+    baseUrl: 'https://pre-test.motherbuy.com',
+    appId: 'wx52989159af26d752'
   },
   prod: {
-    baseUrl: '',
-    appId: 'wxfd489615c5cf60c6' // wxfd489615c5cf60c6 数字解百 wx937cf2718011049d 杭州大厦购物城
+    baseUrl: 'https://m.motherbuy.com',
+    appId: 'wxfd489615c5cf60c6'
   }
 }
 const currentEnv = 'prod'

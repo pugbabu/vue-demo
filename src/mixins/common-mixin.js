@@ -34,7 +34,6 @@ export default {
     },
     getBorderStyle (obj) {
       if (obj.hasOwnProperty('lineType')) {
-        // let style = obj.lineType === 0 ? 'solid' : 'dashed';
         return obj.height + 'px ' + obj.lineType + ' ' + obj.color
       } else {
         return ''
@@ -45,7 +44,6 @@ export default {
         switch (obj.backgroundShowWay) {
           case 0:
             return obj.backgroundColor
-
           case 2:
             obj.backgroundColor = this.defaultBgColor// 设置为默认颜色
             return obj.backgroundColor

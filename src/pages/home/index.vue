@@ -1,4 +1,4 @@
-<!--  -->
+<!-- 首页 -->
 <template>
   <div class="home-wrapper">
     <Menu mode="horizontal" :theme="theme1" :active-name="activeName" @on-select="handleMenuChange">
@@ -43,7 +43,7 @@ export default {
   data () {
     return {
       theme1: 'dark',
-      activeName: '4'
+      activeName: '1'
     }
   },
   components: {
